@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syles/style.css">
+    <title>Flex-Box | Filipe Ramos</title>
+</head>
+<body>
+    <h1>Guia rápido de Flexbox</h1>
+
+    <section>
+        <h2>1. Introdução ao Flexbox</h2>
+        <p>
+            Flexbox é um modelo CSS utilizado para organizar elementos
+            em linhas ou colunas, facilitando a criação de layouts
+            responsivos e o alinhamento de componentes.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Flex Container e Flex Items</h2>
+        <p>
+            O elemento pai se torna um Flex Container com
+            <strong>display: flex</strong>. Seus filhos diretos
+            tornam-se Flex Items.
+        </p>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Direção e eixos</h2>
+        <p>
+            <strong>flex-direction</strong> define a direção dos itens.
+            O eixo principal acompanha essa direção e o transversal
+            fica perpendicular a ele.
+        </p>
+        <div class="container direcao">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Alinhamento e distribuição</h2>
+        <p>
+            <strong>justify-content</strong> distribui os itens no eixo
+            principal. <strong>align-items</strong> os alinha no
+            eixo transversal.
+        </p>
+        <div class="container distribuicao">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Espaçamento e quebra de linha</h2>
+        <p>
+            <strong>gap</strong> define o espaço entre os itens.
+            <strong>flex-wrap</strong> permite a quebra de linha.
+            <strong>align-content</strong> distribui as linhas
+            no eixo transversal quando há espaço disponível.
+        </p>
+        <div class="container quebra">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Dimensionamento flexível</h2>
+        <p>
+            <strong>flex-grow</strong>: permite crescer.
+            <strong>flex-shrink</strong>: permite diminuir.
+            <strong>flex-basis</strong>: define o tamanho inicial.
+            <strong>flex</strong>: atalho para essas três propriedades.
+        </p>
+        <div class="container flexivel">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>7. Ordenação e alinhamento individual</h2>
+        <p>
+            <strong>order</strong> altera a ordem visual dos itens.
+            <strong>align-self</strong> permite alinhar um item
+            individualmente, independentemente do align-items.
+        </p>
+        <div class="container ordenacao" style="height: 100px;">
+            <div class="item">Primeiro</div>
+            <div class="item">Segundo</div>
+            <div class="item">Terceiro</div>
+        </div>
+    </section>
+
+</body>
+</html>
